@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Tallmx Height Optimizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0066FF;
+            --primary-dark: #0052cc;
+            --secondary: #4F46E5;
+            --bg-color: #F8FAFC;
+            --surface-color: #FFFFFF;
+            --text-primary: #0F172A;
+            --text-secondary: #64748B;
+            --border-color: #E2E8F0;
+            --success: #10B981;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: var(--surface-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--secondary);
+            border-radius: 50%;
+        }
+
+        .print-btn {
+            background-color: var(--primary);
+            color: var(--surface-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .print-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background-color: rgba(0, 102, 255, 0.08);
+            color: var(--primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        /* Main Content Layout */
+        .main-layout {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 3rem;
+        }
+
+        /* Sidebar Navigation */
+        aside {
+            position: sticky;
+            top: 6rem;
+            height: fit-content;
+        }
+
+        .sidebar-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .sidebar-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .sidebar-links a {
+            display: block;
+            padding: 0.6rem 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            transition: var(--transition);
+            border-left: 2px solid transparent;
+        }
+
+        .sidebar-links a:hover, .sidebar-links a.active {
+            color: var(--primary);
+            background-color: rgba(0, 102, 255, 0.04);
+            border-left-color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Content Sections */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        section {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+            scroll-margin-top: 6rem;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        section h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 1.5rem;
+            background-color: var(--primary);
+            border-radius: 4px;
+        }
+
+        section p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 0.975rem;
+        }
+
+        section ul {
+            list-style: none;
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+        }
+
+        section li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.975rem;
+        }
+
+        section li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .offline-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(16, 185, 129, 0.08);
+            color: var(--success);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--surface-color);
+            border-top: 1px solid var(--border-color);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            margin-top: 6rem;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* Print Media Styles */
+        @media print {
+            nav, aside, .print-btn {
+                display: none !important;
+            }
+            .main-layout {
+                grid-template-columns: 1fr;
+                margin: 0;
+                padding: 0;
+            }
+            section {
+                box-shadow: none;
+                border: none;
+                padding: 1.5rem 0;
+            }
+            body {
+                background-color: #fff;
+            }
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 900px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            aside {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-dot"></div>
+                Tallmx
+            </a>
+            <button class="print-btn" onclick="window.print()">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                    <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+                </svg>
+                Print / Save PDF
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <h1>Privacy Policy</h1>
+            <p>Transparency, trust, and complete control over your personal metrics.</p>
+            <div class="last-updated">Last updated: June 25, 2026</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-layout">
+        <!-- Sidebar Navigation -->
+        <aside>
+            <div class="sidebar-title">Sections</div>
+            <ul class="sidebar-links">
+                <li><a href="#introduction" class="active">1. Overview & Trust</a></li>
+                <li><a href="#information-collection">2. Data We Collect</a></li>
+                <li><a href="#data-storage">3. 100% Offline Storage</a></li>
+                <li><a href="#user-control">4. Your Data Rights</a></li>
+                <li><a href="#third-parties">5. Third-Party Services</a></li>
+                <li><a href="#children">6. Children's Privacy</a></li>
+                <li><a href="#contact">7. Contact Information</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Text Column -->
+        <div class="content">
+            <!-- 1. Overview -->
+            <section id="introduction">
+                <h2>Overview & Trust</h2>
+                <p>Welcome to Tallmx, a premium health tracker application designed to help you log habits, monitor height growth journeys, and build routines. We respect your privacy and value the trust you place in us when using our application.</p>
+                <p>This policy details how Tallmx collects, stores, and handles your information. By installing and using the app, you agree to the terms outlined in this document.</p>
+            </section>
+
+            <!-- 2. Data We Collect -->
+            <section id="information-collection">
+                <h2>Information We Collect</h2>
+                <p>Tallmx functions primarily as a tracker. To provide customization, we allow you to enter the following parameters:</p>
+                <ul>
+                    <li><strong>Profile Details:</strong> Nickname, age, and gender identity to personalize screen greetings and dashboard logs.</li>
+                    <li><strong>Height Records:</strong> Log records containing your starting height, current height, target height goals, and dates entered.</li>
+                    <li><strong>Habit Checklists:</strong> Records of routines completed (e.g. stretching schedules, decompression workouts, sleep logs, and water metrics).</li>
+                    <li><strong>Daily Metric Logs:</strong> Sleep durations logged (hours) and water intake counts (glasses).</li>
+                </ul>
+            </section>
+
+            <!-- 3. 100% Offline Storage -->
+            <section id="data-storage">
+                <h2>100% Offline Storage Model</h2>
+                <div class="offline-badge">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162a1.734 1.734 0 0 0-1.097-1.097l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.86 1zM2 9v6h12V9H2zm12-1a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h12z"/>
+                    </svg>
+                    100% Offline / Local Storage
+                </div>
+                <p><strong>Your data never leaves your device.</strong> Unlike online applications, Tallmx is built using a secure 100% offline data architecture:</p>
+                <ul>
+                    <li>All statistics, metrics, and logs are kept inside a secure local database (Android Room SQLite) residing exclusively in the app's isolated private sandbox directory.</li>
+                    <li>No internet permissions are requested, and we do not maintain external web servers or databases to store user records.</li>
+                    <li>Because your data stays strictly on your local device storage, we are physically unable to view, sell, rent, or share your data with advertisers, third parties, or researchers.</li>
+                </ul>
+            </section>
+
+            <!-- 4. User Control & Deletion -->
+            <section id="user-control">
+                <h2>Your Rights & Data Control</h2>
+                <p>Since your information is completely local, you have absolute authority and total control over your records:</p>
+                <ul>
+                    <li><strong>Data Correction:</strong> You can edit height entries, units, age, gender, and habits at any time inside the Home or Settings screens.</li>
+                    <li><strong>Data Erasure:</strong> You can permanently erase all records instantly by using the "Reset Progress Data" option inside the Settings screen or by clearing the app's cache and data through the Android System Settings.</li>
+                    <li><strong>Uninstalling:</strong> Deleting the Tallmx application from your phone automatically and permanently purges all database records associated with the application.</li>
+                </ul>
+            </section>
+
+            <!-- 5. Third Party Services -->
+            <section id="third-parties">
+                <h2>Third-Party SDKs & Analytics</h2>
+                <p>We believe in keeping our application clutter-free and private:</p>
+                <ul>
+                    <li>We do not integrate third-party ad networks, telemetry trackers, or analytic frameworks (like Firebase Analytics, Mixpanel, or Google Analytics).</li>
+                    <li>The app runs entirely offline, eliminating network leakage risks or unauthorized tracking.</li>
+                </ul>
+            </section>
+
+            <!-- 6. Children's Privacy -->
+            <section id="children">
+                <h2>Children's Privacy</h2>
+                <p>Because our application collects zero personal information over the internet and keeps all records stored securely on the local device, Tallmx does not collect, request, or solicit any personal information from children under 13.</p>
+                <p>If you are a parent or guardian and learn that your child has entered information into the app, you can completely erase it at any time by clearing the application's data or uninstalling the app.</p>
+            </section>
+
+            <!-- 7. Contact Information -->
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <p>If you have any questions or feedback regarding this Privacy Policy or the offline model of Tallmx, please contact us:</p>
+                <p style="font-weight: 600; color: var(--primary);">Email: support@tallmx.com</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Tallmx. All rights reserved. Built with privacy-first standards.</p>
+    </footer>
+
+    <!-- Interactive Sidebar Indicator Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.sidebar-links a');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -60% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const activeId = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            if (link.getAttribute('href') === `#${activeId}`) {
+                                link.classList.add('active');
+                            } else {
+                                link.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+</body>
+</html>
